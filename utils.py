@@ -1,12 +1,4 @@
-# coding=utf-8
-#!/bin/python3
-#############################$##############
-# PYTHON SOCIAL MEDIA VIDEO DOWNLOADER BOT #
-#          BOT VERSION: 1.0.1              #
-#  AUTHOR : MOHAMMAD ALAMIN (anbuinfosec)  #
-#      GET APIKEY : https://anbusec.xyz    #
-#           COPYRIGHT : anbuinfosec        #
-############################################
+
 import os
 import aiohttp
 import re
