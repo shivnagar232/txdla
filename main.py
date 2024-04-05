@@ -23,9 +23,9 @@ def update_bot():
 
 logging.basicConfig(level=logging.INFO)
 
-TOKEN = config('BOT_TOKEN', default='YOUR_BOT_TOKEN_HERE')
-APIKEY = config('APIKEY', default='YOUR_APIKEY_HERE')
-OWNER = config('OWNER', default='https://facebook.com/anbuinfosec')
+TOKEN = config('BOT_TOKEN', default='7137841250:AAELIDynta7SEVYPJYIAFHuEh-k0FM1Uwjk')
+APIKEY = config('APIKEY', default='fKMqFQH2zWWNWm7b1Ap7')
+OWNER = config('OWNER', default='https://t.me/devggn')
 CLEAN_TERMINAL = config('CLEAN_TERMINAL', default='False')
 
 bot = Bot(token=TOKEN)
@@ -41,7 +41,7 @@ async def on_startup(dp):
 
 @dp.message_handler(commands=['start'])
 async def start(message: types.Message):
-    await message.answer("Hello! Send me video url to download video.\n\n JOIN OUR CHANNELFOR UPDATES @TERABOXSUPPORT01 . ")
+    await message.answer("Hello! Send me video url to download video.\n\n Made by Team SPY. ")
 
 @dp.message_handler(commands=['ping'])
 async def ping(message: types.Message):
@@ -89,7 +89,7 @@ async def echo(message: types.Message):
                     os.remove(file_path)
                     keyboard = types.InlineKeyboardMarkup()
                     url_button = types.InlineKeyboardButton(text="Author", url=OWNER)
-                    url_button2 = types.InlineKeyboardButton(text="Channel", url="https://t.me/teraboxsupport01")
+                    url_button2 = types.InlineKeyboardButton(text="Repo", url="https://github.com/devgaganin")
                     keyboard.add(url_button, url_button2)
                     await message.reply("Thanks for using our bot.", reply_markup=keyboard)
             else:
